@@ -16,5 +16,11 @@ class JrjmarketPipeline(object):
         self.collection = self.db[MONGO_COLLECTION]
 
     def process_item(self, item, spider):
+        try:
+            item['Employee_Count']=int(item['Employee_Count'])
+        except:
+            pass
+
         self.collection.insert(OrderedDict(item))
+
         return item
