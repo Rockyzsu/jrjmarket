@@ -11,7 +11,7 @@ class JrjSpider(scrapy.Spider):
 
 
     def __init__(self):
-        self.r = redis.StrictRedis(REDIS_HOST, db=0)
+        self.r = redis.StrictRedis(REDIS_HOST, db=0,decode_responses=True)
         self.link = 'http://stock.jrj.com.cn/share,{},gsgk.shtml'
 
     def start_requests(self):
@@ -26,7 +26,7 @@ class JrjSpider(scrapy.Spider):
 
         columns = [
             # '_id',
-            'Comanpy_name',
+            'Company_name',
             'English_name',
             'Former_name',
             'Built_date',

@@ -13,7 +13,7 @@ class JrjmarketItem(scrapy.Item):
     # name = scrapy.Field()
     # pass
     _id = scrapy.Field()
-    Comanpy_name = scrapy.Field()
+    Company_name = scrapy.Field()
     English_name = scrapy.Field()
     Former_name = scrapy.Field()
     Built_date = scrapy.Field()

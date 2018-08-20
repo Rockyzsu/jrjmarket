@@ -6,7 +6,7 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 from collections import OrderedDict
 import pymongo
-from settings import MONGO_CLIENT,MONGO_DB,MONGO_COLLECTION
+from jrjmarket.settings import MONGO_CLIENT,MONGO_DB,MONGO_COLLECTION
 
 
 class JrjmarketPipeline(object):

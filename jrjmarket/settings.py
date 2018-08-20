@@ -13,10 +13,10 @@ BOT_NAME = 'jrjmarket'
 
 SPIDER_MODULES = ['jrjmarket.spiders']
 NEWSPIDER_MODULE = 'jrjmarket.spiders'
-MONGO_CLIENT = 'localhost'
+MONGO_CLIENT = '10.18.6.102'
 MONGO_DB = 'stock'
 MONGO_COLLECTION = 'company'
-REDIS_HOST='raspberrypi'
+REDIS_HOST='127.0.0.1'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36'
 

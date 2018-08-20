@@ -22,4 +22,4 @@ fetch_stock()
 name = 'jrj'
 cmd = 'scrapy crawl {}'.format(name)
 cmdline.execute(cmd.split())
-print 'done'
+print('done')
