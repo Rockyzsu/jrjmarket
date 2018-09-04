@@ -19,3 +19,4 @@ __pycache__/
 wikizhword.text
 news_tensite_xml.dat
 news_tensite_xml.smarty.dat
+config.py
